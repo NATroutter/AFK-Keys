@@ -4,6 +4,7 @@ import fi.natroutter.afkkeys.AFKKeys;
 import fi.natroutter.afkkeys.Handler;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.Mouse;
+import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.GameOptions;
@@ -55,6 +56,13 @@ public abstract class MinecraftClientMixin {
                     Handler.INSTANCE.unpause();
                 }
             } else {
+                if (currentScreen instanceof GameMenuScreen) {
+                    options.pauseOnLostFocus = false;
+                    MinecraftClient.getInstance().setScreen(null);
+                    MinecraftClient.getInstance().mouse.lockCursor();
+                    System.out.println("Trigger!!!!");
+                }
+
                 if (!Handler.INSTANCE.isPaused()) {
                     Handler.INSTANCE.pause();
                 }
@@ -65,7 +73,9 @@ public abstract class MinecraftClientMixin {
 
     @Inject(at = @At("HEAD"), method = "openPauseMenu(Z)V", cancellable = true)
     private void modifyOpenPauseMenu(CallbackInfo info) {
-        if (Handler.INSTANCE.isRunning()) info.cancel();
+        if (Handler.INSTANCE.isRunning()) {
+            info.cancel();
+        }
     }
 
     @Inject(at = @At("HEAD"), method = "handleInputEvents()V")

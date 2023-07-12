@@ -42,12 +42,6 @@
         "Developer's Website": "https://natroutter.fi/",
         "Discord": "https://discord.nat.gg/"
       },
-      "parent": {
-        "id": "afkkeys",
-        "name": "AFK-Keys",
-        "description": "Better than tape and glue, this mod allows you to hold down keys to get things done while AFK.",
-        "icon": "assets/afkkeys/icon.png"
-      },
       "update_checker": false
     }
   }
