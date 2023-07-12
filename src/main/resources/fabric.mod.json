@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "afkkeys",
+  "version": "${version}",
+
+  "name": "AFK-Keys",
+  "description": "Better than tape and glue, this mod allows you to hold down keys to get things done while AFK.",
+  "authors": [
+    "NATroutter"
+  ],
+  "contributors": [
+    "tagged",
+    "Zoltus"
+  ],
+  "contact": {
+    "homepage": "https://github.com/NATroutter/AFK-Keys/",
+    "issues": "https://github.com/NATroutter/AFK-Keys/issues",
+    "sources": "https://github.com/NATroutter/AFK-Keys/"
+  },
+  "license": "MIT",
+  "icon": "assets/afkkeys/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "fi.natroutter.afkkeys.AFKKeys"
+    ]
+  },
+  "mixins": [
+    "afkkeys.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": ">=1.20"
+  },
+  "suggests": {
+    "modmenu": ">=7.0.1"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Developer's Website": "https://natroutter.fi/",
+        "Discord": "https://discord.nat.gg/"
+      },
+      "parent": {
+        "id": "afkkeys",
+        "name": "AFK-Keys",
+        "description": "Better than tape and glue, this mod allows you to hold down keys to get things done while AFK.",
+        "icon": "assets/afkkeys/icon.png"
+      },
+      "update_checker": false
+    }
+  }
+}
