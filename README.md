@@ -41,7 +41,7 @@ I will not do updates to old minecraft versions even if there is a bug, please u
 | `Grab Mouse` | `Left Alt`  | Grabs mouse input while actively holding keys down |
 
 ## Demonstration
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/66pMytx"  ><a href="//imgur.com/a/66pMytx">AFK-keys //  Demonstration</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[Images here](https://imgur.com/a/66pMytx)
 
 ## Credits
 This mod is inspired by [AFKtape](https://www.curseforge.com/minecraft/mc-mods/afktape) by [Kokeria](https://www.curseforge.com/members/kokeria/projects).  
