@@ -41,14 +41,7 @@ I will not do updates to old minecraft versions even if there is a bug, please u
 | `Grab Mouse` | `Left Alt`  | Grabs mouse input while actively holding keys down |
 
 ## Demonstration
-#### Automatically holding down the `Left Mouse Button` to mine cobblestone you can even multitask while it's running
-![demo1](https://cdn.nat.gg/img/afk-keys_demo1.gif)
-
-#### Automatically holding down the `W` key to move forward with boat, you can also press `left alt` to capture mouse movement and look around while moving
-![demo2](https://cdn.nat.gg/img/afk-keys_demo2.gif)
-
-#### Automatic sleeping system
-![demo3](https://cdn.nat.gg/img/afk-keys_demo3.gif)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/66pMytx"  ><a href="//imgur.com/a/66pMytx">AFK-keys //  Demonstration</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Credits
 This mod is inspired by [AFKtape](https://www.curseforge.com/minecraft/mc-mods/afktape) by [Kokeria](https://www.curseforge.com/members/kokeria/projects).  
