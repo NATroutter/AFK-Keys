@@ -18,6 +18,9 @@ Introducing a revolutionary mod that is better than tape or glue designed to rep
 ## How To Use
 Operating this mod is a breeze. Simply press and hold any button or key of your choice, and with a quick tap of the `Activate` key, your selected buttons will remain pressed down automatically.
 
+## Demonstration
+[Images here](https://imgur.com/a/66pMytx)
+
 ## Download
 - [Github Releases](https://github.com/NATroutter/AFK-Keys/releases)
 
@@ -39,9 +42,6 @@ I will not do updates to old minecraft versions even if there is a bug, please u
 |--------------|-------------|----------------------------------------------------|
 | `Activate`   | `K`         | Activates holding down selected keys               |
 | `Grab Mouse` | `Left Alt`  | Grabs mouse input while actively holding keys down |
-
-## Demonstration
-[Images here](https://imgur.com/a/66pMytx)
 
 ## Credits
 This mod is inspired by [AFKtape](https://www.curseforge.com/minecraft/mc-mods/afktape) by [Kokeria](https://www.curseforge.com/members/kokeria/projects).  
