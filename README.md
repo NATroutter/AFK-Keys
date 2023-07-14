@@ -22,7 +22,7 @@ Operating this mod is a breeze. Simply press and hold any button or key of your 
 [Images here](https://imgur.com/a/66pMytx)
 
 ## Download
-- [Github Releases](https://github.com/NATroutter/AFK-Keys/releases)
+[Github Releases](https://github.com/NATroutter/AFK-Keys/releases)
 
 
 ## Requirements
