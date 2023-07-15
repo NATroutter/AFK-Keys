@@ -7,7 +7,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
-version = project.mod_version
+version = "${project.mod_version}-${project.minecraft_version}"
 group = project.maven_group
 
 repositories {
@@ -34,6 +34,7 @@ processResources {
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 17
 }
+
 java {
 	withSourcesJar()
 }
@@ -43,6 +44,7 @@ jar {
 		rename { "${it}_${project.archivesBaseName}"}
 	}
 }
+
 publishing {
 	publications {
 		mavenJava(MavenPublication) {

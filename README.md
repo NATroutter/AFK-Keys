@@ -21,13 +21,12 @@ Operating this mod is a breeze. Simply press and hold any button or key of your 
 ## Demonstration
 [Images here](https://imgur.com/a/66pMytx)
 
-## Download
+## Download & Requirements
 [Github Releases](https://github.com/NATroutter/AFK-Keys/releases)
-
 
 ## Requirements
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Modmenu 7.0.1 or newer](https://www.curseforge.com/minecraft/mc-mods/modmenu)
+- [Modmenu 7.0.1 or newer](https://www.curseforge.com/minecraft/mc-mods/modmenu) (optional)
 
 ## Supported Versions
 | Minecraft Version | Mod Version | 
