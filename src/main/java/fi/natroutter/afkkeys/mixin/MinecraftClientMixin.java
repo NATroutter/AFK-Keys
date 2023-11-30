@@ -36,8 +36,6 @@ public abstract class MinecraftClientMixin {
 
     @Inject(at = @At("HEAD"), method = "tick()V")
     private void modifyTick(CallbackInfo info) {
-        System.out.println("Tick - " + MinecraftClient.getInstance().currentScreen);
-
         if (Handler.INSTANCE.isRunningIgnorePause()) {
             if (player == null || !player.isAlive()) {
                 Handler.INSTANCE.disable();
