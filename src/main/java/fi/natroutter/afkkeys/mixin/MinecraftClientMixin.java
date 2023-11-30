@@ -36,6 +36,7 @@ public abstract class MinecraftClientMixin {
 
     @Inject(at = @At("HEAD"), method = "tick()V")
     private void modifyTick(CallbackInfo info) {
+        System.out.println("Tick - " + MinecraftClient.getInstance().currentScreen);
 
         if (Handler.INSTANCE.isRunningIgnorePause()) {
             if (player == null || !player.isAlive()) {
@@ -71,7 +72,7 @@ public abstract class MinecraftClientMixin {
 
     }
 
-    @Inject(at = @At("HEAD"), method = "openPauseMenu(Z)V", cancellable = true)
+    @Inject(at = @At("HEAD"), method = "openGameMenu(Z)V", cancellable = true) // "openPauseMenu(Z)V"
     private void modifyOpenPauseMenu(CallbackInfo info) {
         if (Handler.INSTANCE.isRunning()) {
             info.cancel();

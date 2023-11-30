@@ -13,9 +13,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Mouse.class)
 public abstract class MouseMixin {
 
-    @Inject(at = @At("HEAD"), method = "isCursorLocked()Z", cancellable = true)
+    @Inject(at = @At("HEAD"), method = "isCursorLocked()Z", cancellable = true) // "isCursorLocked()Z"
     private void modifyIsCursorLocked(CallbackInfoReturnable<Boolean> info) {
-        if (MinecraftClient.getInstance().currentScreen == null) {
+        if (MinecraftClient.getInstance().currentScreen == null && Handler.INSTANCE.isRunning()) {
             info.setReturnValue(true);
             info.cancel();
         }
