@@ -31,7 +31,8 @@ Operating this mod is a breeze. Simply press and hold any button or key of your 
 ## Supported Versions
 | Minecraft Version | Mod Version | 
 |-------------------|-------------|
-| `1.20.x`          | `1.0-?`     |
+| `1.20.1`          | `1.0-1.0`   |
+| `1.20.2`          | `1.3.1-?`   |
 
 I will not do updates to old minecraft versions even if there is a bug, please update to the latest version of minecraft if you want to use this mod. alternatively you can use the old versions of this mod, but they are not supported and will not be updated.
 
