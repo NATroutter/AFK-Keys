@@ -15,19 +15,18 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(InGameHud.class)
 public abstract class InGameHudMixin {
 
-    @Shadow private int scaledWidth;
-    @Shadow private int scaledHeight;
-
     @Shadow public abstract TextRenderer getTextRenderer();
 
     //render HUD when running
-    //@Inject(at = @At("TAIL"), method = "render(Lnet/minecraft/client/gui/DrawContext;F)V")
     @Inject(at = @At("TAIL"), method = "render")
     private void modifyRender(DrawContext context, RenderTickCounter tickCounter, CallbackInfo ci) {
 
         if (Handler.INSTANCE.isRunning()) {
             TextRenderer renderer = getTextRenderer();
             String[] lines = Handler.INSTANCE.getMessage();
+
+            int scaledWidth = context.getScaledWindowWidth();
+            int scaledHeight = context.getScaledWindowHeight();
 
             RenderSystem.enableBlend();
             RenderSystem.defaultBlendFunc();
