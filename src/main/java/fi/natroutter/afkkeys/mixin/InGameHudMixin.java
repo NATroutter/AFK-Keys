@@ -5,6 +5,7 @@ import fi.natroutter.afkkeys.Handler;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;
+import net.minecraft.client.render.RenderTickCounter;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,8 +21,9 @@ public abstract class InGameHudMixin {
     @Shadow public abstract TextRenderer getTextRenderer();
 
     //render HUD when running
-    @Inject(at = @At("TAIL"), method = "render(Lnet/minecraft/client/gui/DrawContext;F)V")
-    private void modifyRender(DrawContext context, float tickDelta, CallbackInfo ci) {
+    //@Inject(at = @At("TAIL"), method = "render(Lnet/minecraft/client/gui/DrawContext;F)V")
+    @Inject(at = @At("TAIL"), method = "render")
+    private void modifyRender(DrawContext context, RenderTickCounter tickCounter, CallbackInfo ci) {
 
         if (Handler.INSTANCE.isRunning()) {
             TextRenderer renderer = getTextRenderer();
