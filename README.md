@@ -30,7 +30,7 @@ Operating this mod is a breeze. Simply press and hold any button or key of your 
 ## Supported Versions
 | Minecraft Version | Mod Version | 
 |-------------------|-------------|
-| `1.20.1`          | `1.0-1.0`   |
+| `1.20.1`          | `1.0 - 1.0` |
 | `1.20.2`          | `1.3.1`     |
 | `1.21`            | `1.3.2 - ?` |
 
