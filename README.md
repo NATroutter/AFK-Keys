@@ -26,13 +26,13 @@ Operating this mod is a breeze. Simply press and hold any button or key of your 
 
 ## Requirements
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Modmenu 7.0.1 or newer](https://www.curseforge.com/minecraft/mc-mods/modmenu) (optional)
 
 ## Supported Versions
 | Minecraft Version | Mod Version | 
 |-------------------|-------------|
 | `1.20.1`          | `1.0-1.0`   |
-| `1.20.2`          | `1.3.1-?`   |
+| `1.20.2`          | `1.3.1`     |
+| `1.21`            | `1.3.2-?`   |
 
 I will not do updates to old minecraft versions even if there is a bug, please update to the latest version of minecraft if you want to use this mod. alternatively you can use the old versions of this mod, but they are not supported and will not be updated.
 
